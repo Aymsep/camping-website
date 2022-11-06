@@ -1,0 +1,528 @@
+/*reset user agent stylesheet*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+
+
+/**/
+/* header style */
+
+header{
+    height:100vh;
+    width: 100%;
+    background-image: url("./image/alaska.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+/* div.content */
+
+.content{
+    padding: 0 10px;
+    text-align: center;
+}
+
+/*heading 2*/
+
+.content h2{
+    font-size: clamp(1rem ,  1vw + 1rem , 1.8rem);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+/* single line divider style in all website */
+
+.line{
+    width: 150px;
+    height: 6px;
+    background-color: red;
+    margin: 10px auto;
+    border-radius:8px;
+}
+
+/*heading 2*/
+
+.content h1{
+  color: white;
+  text-transform: uppercase;
+  font-size:6vmin;
+  margin:50px 0 30px;
+  letter-spacing: 2px;
+}
+
+/* single button style for all button in website! */
+button{
+    padding: 6px 25px;
+    font-size: 18px;
+    outline: none;
+    border: 0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: white;
+    background-color:red;
+    border-radius:6px;
+    cursor: pointer;
+    transition:all 1s ease;
+}
+
+/*end of header content styles*/
+
+
+/*****************************************/
+
+/*website navbar styles*/
+
+
+.navbar{
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.3rem;
+    color: white;
+
+}
+
+/*Logo*/
+
+.navbar label a{
+    font-size:1.8rem;
+    color: white;
+}
+
+
+/*navigation links*/
+.navbar ul{
+    display:flex;
+    gap: 35px;
+}
+
+.navbar ul li a{
+    font-size:1.1rem;
+    text-transform:capitalize;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+
+/* toggle button */
+
+.toggle-button{
+    width: 45px;
+    height: 28px;
+    display: none;
+    flex-direction: column;
+    position:absolute;
+    top: 1.2rem;
+    right: .2rem;
+    justify-content:space-between;
+}
+
+.toggle-button .bar{
+   border-radius:8px;
+   height: 4px;
+   width: 80%;
+   background-color:white;
+}
+
+/* end of navbar style */
+
+/*****************************************************/
+
+
+/* second section styles  */
+
+/* .section-event */
+
+.section-event{
+    padding:60px 15px;
+}
+
+/*heading 1*/
+.section-event h1 {
+    font-size:5.5vmin;
+    text-align: center;
+    text-transform:capitalize;
+    letter-spacing: .7px;
+}
+
+/* div.row containg 2 column same style , same content */
+
+.section-event .row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 40px 20px;
+}
+
+/* column style */
+
+.section-event .col{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 50%;
+
+}
+
+/* column images style */
+
+.section-event img{
+    border-radius:8px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
+/*first text under image style 'caption' */
+.section-event .row .img-caption{
+    color: black;
+    text-transform:capitalize;
+    font-weight: bold;
+    letter-spacing: .7px;
+    padding: 20px 0 10px;
+}
+
+/* column paragraph */
+
+.section-event .row p{
+    color: gray;
+    width:min(100%,500px);
+    padding: 15px 0;
+}
+
+/* end of second second style */
+
+/*****************************************/
+
+
+/* third section style */
+
+/* div.container-single */
+
+.container-single{
+    height: 80vh;
+    position: relative;
+    width:100%;
+    background-image:url("./image/friends.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding:20px;
+}
+
+/* heading 1 */
+.container-single h1{
+    color: white;
+    text-transform:capitalize;
+    letter-spacing: .7px;
+    font-size:6vmin;
+}
+
+/* paragraph  */
+.container-single p{
+    color: white;
+    max-width: 950px;
+    padding: 25px 0;
+    
+}
+
+/* end of third section style */
+
+/*****************************************/
+
+/* fourth section style */
+
+/* .container-upcoming */
+.container-upcoming{
+    display: flex;
+    width: 100%;
+    padding: 90px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* column 1 and 2 style */
+
+.container-upcoming .colu-1,.colu-2{
+    width:50%;
+}
+
+/* column 1  */
+.colu-1{
+    padding:0 60px;
+}
+
+/* move line from center to left (default position) */
+.colu-1 .line{
+    margin:15px 0;
+}
+
+/* heading 1 */
+.colu-1 h1{
+    font-size:6vmin;
+    text-transform:uppercase;
+    letter-spacing:.7px;
+} 
+
+/* paragraph */
+
+.colu-1 p{
+    text-align: left;
+    color: grey;
+    padding: 25px 0;
+    /* width:min(100%,900px); */
+}
+
+/* end style of column 1 */
+
+
+/* column 2 */
+
+.colu-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* image style  */
+
+.colu-2 img{
+    width: 45%;
+    border-radius: 6px;
+    transition:all .7s ease;
+    cursor:pointer;
+}
+
+/* end of column 2  */
+
+/* end of fourth section style  */
+
+/***************************************************/
+
+/* footer style */
+
+footer{
+    padding: 50px 60px;
+    text-align: center;
+    background-color:#05132e;
+    color: white;
+    letter-spacing: .7px;
+    text-transform: capitalize;
+}
+footer p {
+    padding:10px;
+    line-height:25px;
+}
+ /* end of footer style  */
+
+
+ 
+
+/* this media query containing all hover styles and make 
+them available only in desktop , not touch screen device  */
+
+
+@media (hover: hover) {
+    button:hover{
+        background-color:white;
+        color: red;
+        box-shadow: -3px 0px 48px 10px rgba(235,0,0,0.75);
+       -webkit-box-shadow: -3px 0px 48px 10px rgba(235,0,0,0.75);
+       -moz-box-shadow: -3px 0px 48px 10px rgba(235,0,0,0.75);
+    }
+    .navbar ul li a:hover{
+        color:red;
+        transition-duration: .8s;
+    }
+    .section-event img:hover{
+        scale:.9;
+    }
+    .colu-2 img:first-of-type:hover{
+        transform: translate(25%,25%);
+        scale: 2;
+    }
+    .colu-2 img:nth-child(2):hover{
+        transform: translate(-25%,25%);
+        scale: 2;
+    }
+    .colu-2 img:nth-child(3):hover{
+        transform: translate(25%,-25%);
+        scale: 2;
+    }
+    .colu-2 img:last-of-type:hover{
+        transform: translate(-25%,-25%);
+        scale: 2;
+    }
+    
+    
+}
+
+
+
+
+
+/* media queries display from 1084px */
+
+
+@media  (max-width:1084px) {
+    .section-event .row{
+        width:100%;
+        flex-direction:column;
+    }
+    .section-event .col{
+        margin: 20px 0;
+        width:100%;
+    }
+
+    .section-event img{
+        width: 100%;
+    }
+    .container-upcoming {
+        flex-direction:column;
+    }
+    .container-upcoming .colu-1,.colu-2{
+        width:100%;
+        text-align: center;
+    }
+    .colu-1{
+        padding: 0;
+    }
+    .colu-1 .line{
+        margin: 0 auto;
+    }
+    .colu-2{
+        margin-top: 30px;
+    }
+    .colu-2 img{
+        width: 100%;
+    }
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:868px) {
+    .toggle-button{
+        display: flex;
+    }
+    .navbar{
+        position: fixed;
+        z-index: 10;
+        height:100% ;
+        flex-direction: column;
+        width: 100%;
+        }
+
+    .navbar ul{
+        display: none;
+        text-align: center;
+        }
+    .navbar ul li{
+        margin: 50px auto;
+    }
+   
+    .navbar label{
+        align-self: flex-start;
+    }
+    .nav-links.active{
+        display: block;
+        
+    }
+    .navbar.active{
+        background-color: rgb(10, 1, 1);
+        transition: .6s;
+    }
+    .toggle-button span{
+        transition: .6s;
+    }
+
+
+    
+    .toggle-button .bar1.active{
+        /* width: 80%; */
+        transform: translateY(8px) rotate(45deg);
+
+
+    }
+    
+    .toggle-button .bar2.active{
+        transform: translateX(-60px);
+        opacity:0;
+
+    }
+
+    .toggle-button .bar3.active{
+        transform: translateY(-16px) rotate(-45deg);
+    }
+    .btn-rs{
+        display: none;
+    }
+    .btn-rs.active{
+        display: block;
+    }
+}
