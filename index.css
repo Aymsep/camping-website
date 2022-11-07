@@ -78,7 +78,10 @@ button{
     border-radius:6px;
     cursor: pointer;
     transition:all 1s ease;
+    font-family:Arial, Helvetica, sans-serif ;
 }
+
+
 
 /*end of header content styles*/
 
@@ -425,6 +428,8 @@ them available only in desktop , not touch screen device  */
     .colu-2 img{
         width: 100%;
     }
+
+  
    
     
 }
