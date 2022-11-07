@@ -127,8 +127,11 @@ button{
     text-transform:capitalize;
     letter-spacing: 1px;
     color: whitesmoke;
+    position: relative;
+    padding: 0 10px;
 }
-
+  
+  
 
 /* toggle button */
 
@@ -215,7 +218,7 @@ button{
 
 .section-event .row p{
     color: gray;
-    width:min(100%,80%);
+    width:min(100%,90%);
     padding: 15px 0;
 }
 
@@ -369,6 +372,24 @@ them available only in desktop , not touch screen device  */
         color:red;
         transition-duration: .8s;
     }
+    .navbar ul li a:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+        background-color: red;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .navbar ul li a:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        background-color:white;
+      }
     .section-event img:hover{
         scale:.9;
     }
