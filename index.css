@@ -215,7 +215,7 @@ button{
 
 .section-event .row p{
     color: gray;
-    width:min(100%,500px);
+    width:min(100%,80%);
     padding: 15px 0;
 }
 
