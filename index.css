@@ -521,7 +521,7 @@ them available only in desktop , not touch screen device  */
     }
     
     .toggle-button .bar2.active{
-        transform: translateX(-60px);
+        transform: translateX(-150px) translateY(-40px) rotate(315deg);
         opacity:0;
         background-color: red;
 
