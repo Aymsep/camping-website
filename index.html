@@ -15,35 +15,39 @@
 </head>
 <body>
     <!-- page navigation bar -->
-    <nav class="navbar">
+    <div class="container-nav">
 
-        <!-- website logo -->
-        <label for=""><a href="#">Camp <span style="color:red;letter-spacing:1.5px;">Alaksa</span></a></label>
+        <nav class="navbar">
+    
+            <!-- website logo -->
+            <label for="logo"><a href="#landing" id="logo" >Camp <span style="color:red;letter-spacing:1.5px;">Alaksa</span></a></label>
+    
+            <!-- website navigation links -->
+            <ul class="nav-links">
+                <li><a href="#">programs</a></li>
+                <li><a href="#">prices</a></li>
+                <li><a href="#">schedule</a></li>
+                <li><a href="#">alaska</a></li>
+            </ul>
+    
+            <!-- website toggle button , display in media queries -->
+            <a href="#" class="toggle-button">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </a>
+    
+            <!-- landing page button  -->
+            <button type="submit" class="btn-rs">reach us</button>
+    
+        </nav>
 
-        <!-- website navigation links -->
-        <ul class="nav-links">
-            <li><a href="#">programs</a></li>
-            <li><a href="#">prices</a></li>
-            <li><a href="#">schedule</a></li>
-            <li><a href="#">alaska</a></li>
-        </ul>
-
-        <!-- website toggle button , display in media queries -->
-        <a href="#" class="toggle-button">
-            <span class="bar bar1"></span>
-            <span class="bar bar2"></span>
-            <span class="bar bar3"></span>
-        </a>
-
-        <!-- landing page button  -->
-        <button type="submit" class="btn-rs">reach us</button>
-
-    </nav>
+    </div>
     <!-- end of navigation bar -->
 
 
     <!-- content inside landing page -->
-<header>
+<header id="landing">
 
     <!-- content div -->
     <div class="content">

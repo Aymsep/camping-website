@@ -87,6 +87,10 @@ button{
 
 /*website navbar styles*/
 
+/* .container-nav{
+    width:100%;
+    height:auto;
+} */
 
 .navbar{
     width:100%;
@@ -131,7 +135,7 @@ button{
     display: none;
     flex-direction: column;
     position:absolute;
-    top: 1.2rem;
+    top: 1.4rem;
     right: .2rem;
     justify-content:space-between;
 }
@@ -473,9 +477,13 @@ them available only in desktop , not touch screen device  */
     .navbar{
         position: fixed;
         z-index: 10;
-        height:100% ;
         flex-direction: column;
         width: 100%;
+        background-color: black;
+        }
+
+        .navbar ul li a:active{
+            color:red;
         }
 
     .navbar ul{
@@ -496,6 +504,7 @@ them available only in desktop , not touch screen device  */
     .navbar.active{
         background-color: rgb(10, 1, 1);
         transition: .6s;
+        height: 100%;
     }
     .toggle-button span{
         transition: .6s;
@@ -506,6 +515,7 @@ them available only in desktop , not touch screen device  */
     .toggle-button .bar1.active{
         /* width: 80%; */
         transform: translateY(8px) rotate(45deg);
+        background-color: red;
 
 
     }
@@ -513,11 +523,15 @@ them available only in desktop , not touch screen device  */
     .toggle-button .bar2.active{
         transform: translateX(-60px);
         opacity:0;
+        background-color: red;
+
 
     }
 
     .toggle-button .bar3.active{
         transform: translateY(-16px) rotate(-45deg);
+        background-color: red;
+
     }
     .btn-rs{
         display: none;
